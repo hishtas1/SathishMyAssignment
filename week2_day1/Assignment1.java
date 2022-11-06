@@ -12,6 +12,7 @@ public class Assignment1 {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("http://leaftaps.com/opentaps/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.findElement(By.id("username")).sendKeys("demosalesmanager");
