@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SalesForce" verbose="2">
+<parameter name="URL" value="https://login.salesforce.com"></parameter>
+<parameter name="USERNAME" value="hari.radhakrishnan@qeagle.com"></parameter>
+<parameter name="PASSWORD" value="Testleaf$321"></parameter>
+  <test thread-count="5" parallel="classes" name="Test" >
+    <classes>
+      <class name="week5.day2.SalesForce.CreateAccount"/>
+      <class name="week5.day2.SalesForce.CreateTask"/>
+      <class name="week5.day2.SalesForce.Opportunities"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- SalesForce -->
